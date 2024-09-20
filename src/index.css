@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.breadCrumb {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  .form-control {
+    font-size: 14px;
+  }
+  .btn-primary {
+    font-size: 14px;
+  }
+}
+
+.searchBar {
+  width: 80%;
+}
+
+.customerTable {
+  th {
+    font-size: 12px;
+    text-align: center;
+  }
+  td {
+    font-size: 12px;
+  }
+  td:first-child {
+    text-align: center;
+  }
+}
+
+.customerWrapper {
+  display: flex;
+}
+
+#dropdown-basic.dropdown-toggle {
+    font-size: 12px !important;
+}
+
+.customerForm {
+  .modal-dialog {
+    max-width: 700px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    .childTable {
+      flex: 1 0 50%;
+      padding: 0 10px;
+      font-size: 12px;
+      input { font-size: 12px;}
+    }
+    button {font-size: 12px}
+  }
+}
+
+.pagination {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+  .responsive-table th, .responsive-table td {
+    font-size: 14px;
+  }
+  .customerForm {
+    form {
+      .childTable {
+        flex: 1 0 100%;
+      }
+    }
+  }
+}
